@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home: React.FC = () => {
   return (
@@ -15,9 +16,16 @@ const Home: React.FC = () => {
               Discover a new dimension of possibilities with our innovative
               platform
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
-              Get Started
-            </button>
+            {/* Buttons links to neospacecanvas.com */}
+            <Link
+              href="https://neospacecanvas.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
+                Get Started
+              </button>
+            </Link>
           </div>
           <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
             <video
@@ -75,9 +83,15 @@ const Home: React.FC = () => {
             Join thousands of satisfied users and take your experience to the
             next level
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
-            Sign Up Now
-          </button>
+          <Link
+            href="https://neospacecanvas.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
+              Get Started
+            </button>
+          </Link>
         </div>
       </section>
     </div>
