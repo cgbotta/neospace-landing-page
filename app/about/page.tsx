@@ -184,7 +184,7 @@ const About: React.FC = () => {
           </div>
           <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
             <p className="text-xl text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              At Neo-Space, we're committed to bringing{" "}
+              At Neo-Space, we&apos;re committed to bringing{" "}
               <span className="font-semibold text-blue-600 dark:text-blue-400">
                 clarity
               </span>
@@ -200,7 +200,7 @@ const About: React.FC = () => {
               </span>{" "}
               to business operations. Our goal is to empower companies to make
               better decisions and optimize their processes, preparing them for
-              the challenges of today's fast-paced business environment.
+              the challenges of today&apos;s fast-paced business environment.
             </p>
           </div>
         </div>
@@ -265,8 +265,8 @@ const About: React.FC = () => {
             Ready to Transform Your Operations?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join the businesses already benefiting from Neo-Space's innovative
-            solutions
+            Join the businesses already benefiting from Neo-Space&apos;s
+            innovative solutions
           </p>
           <Link
             href="https://neospacecanvas.com"
