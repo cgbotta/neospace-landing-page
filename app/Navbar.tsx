@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link href="/">
               <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                Neospace
+                Neo-Space
               </span>
             </Link>
           </div>
@@ -41,11 +41,17 @@ const Navbar: React.FC = () => {
               About
             </Link>
             <Link
+              href="/team"
+              className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2"
+            >
+              The Team
+            </Link>
+            {/* <Link
               href="/contact"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2"
             >
               Contact
-            </Link>
+            </Link> */}
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2"

@@ -4,8 +4,8 @@ import "./globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Neospace",
-  description: "Welcome to Neospace's website",
+  title: "Neo-Space",
+  description: "Welcome to Neo-Space's website",
 };
 
 export default function RootLayout({
