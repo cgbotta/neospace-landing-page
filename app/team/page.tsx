@@ -84,7 +84,7 @@ const TheTeam: React.FC = () => {
           5Head Chess.
         </>
       ),
-      imageSrc: "/Colton.jpg",
+      imageSrc: "/colton.jpg",
       linkedinUrl: "https://www.linkedin.com/in/coltonbotta/",
     },
   ];
