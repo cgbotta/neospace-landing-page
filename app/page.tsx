@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { LineChart, Users, Database, Brain } from "lucide-react";
+import { LineChart, Users, Database } from "lucide-react";
 
 const FeatureCard: React.FC<{
   title: string;

@@ -56,7 +56,7 @@ const TheTeam: React.FC = () => {
     {
       name: "Jake Henderson",
       role: "Founder",
-      bio: "Jake is a skilled Software Engineer with a strong background in Distributed Systems, Event Driven Systems, Multiprocessing, and Concurrency. Currently, he is pursuing an MS in Computer Science with a Machine Learning focus at the Georgia Institute of Technology. He graduated from North Carolina State University with a BS in Economics and a minor in Statistics, and Jake's professional journey includes SWE roles at IBM, SAS, Railinc Corp., and 5Head Chess.",
+      bio: "Jake is a skilled Software Engineer with a strong background in Distributed Systems, Event Driven Systems, Multiprocessing, and Concurrency. Currently, he is pursuing an MS in Computer Science with a Machine Learning focus at the Georgia Institute of Technology. He graduated from North Carolina State University with a BS in Economics and a minor in Statistics, and his professional journey includes SWE roles at IBM, SAS, Railinc Corp., and 5Head Chess.",
       imageSrc: "/jake.jpeg",
       linkedinUrl: "https://www.linkedin.com/in/jake-h-19b577232/",
     },
@@ -77,10 +77,11 @@ const TheTeam: React.FC = () => {
           >
             2021 Marshall Scholar
           </Link>
-          . Colton's academic journey includes a Masters in Cognitive Science
-          from the University of Edinburgh and an MPhil in Engineering from the
-          University of Cambridge's Machine Learning Group. His professional
-          experience spans multiple SWE roles at Pendo.io, IBM, and 5Head Chess.
+          . Colton&apos;s academic journey includes a Masters in Cognitive
+          Science from the University of Edinburgh and an MPhil in Engineering
+          from the University of Cambridge&apos;s Machine Learning Group. His
+          professional experience spans multiple SWE roles at Pendo.io, IBM, and
+          5Head Chess.
         </>
       ),
       imageSrc: "/Colton.jpg",
@@ -98,7 +99,7 @@ const TheTeam: React.FC = () => {
               Meet <span className="text-blue-600">The Team</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              The innovative minds behind Neo-Space's AI-powered solutions
+              The innovative minds behind Neo-Space&apos;s AI-powered solutions
             </p>
           </div>
         </div>
@@ -127,8 +128,8 @@ const TheTeam: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold text-white mb-4">Join Us!</h2>
           <p className="text-xl text-blue-100 mb-8">
-            We're always looking for talented individuals to help push the
-            boundaries of what's possible in AI and analytics
+            We&apos;re always looking for talented individuals to help push the
+            boundaries of what&apos;s possible in AI and analytics
           </p>
           <button
             disabled
