@@ -7,7 +7,7 @@ import { Briefcase, Mail, Linkedin } from "lucide-react";
 const TeamMember: React.FC<{
   name: string;
   role: string;
-  bio: string;
+  bio: string | React.ReactNode;
   imageSrc: string;
   linkedinUrl: string;
 }> = ({ name, role, bio, imageSrc, linkedinUrl }) => (
