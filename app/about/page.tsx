@@ -3,14 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import {
   LineChart,
-  Users,
-  Database,
-  Brain,
-  FileSearch,
   Zap,
-  Layers,
-  Lock,
-  Target,
   TrendingUp,
   PieChart,
   Users as UsersIcon,

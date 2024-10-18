@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Users, Briefcase, Mail, Linkedin } from "lucide-react";
+import { Briefcase, Mail, Linkedin } from "lucide-react";
 
 const TeamMember: React.FC<{
   name: string;
