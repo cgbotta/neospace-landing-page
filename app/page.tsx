@@ -6,6 +6,7 @@ import Script from "next/script";
 
 // Declare custom JSX element for stripe-buy-button
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
     interface IntrinsicElements {
       "stripe-buy-button": React.DetailedHTMLProps<
