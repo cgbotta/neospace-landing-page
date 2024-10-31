@@ -4,6 +4,18 @@ import Link from "next/link";
 import { LineChart, Users, Database } from "lucide-react";
 import Script from "next/script";
 
+// Declare custom JSX element for stripe-buy-button
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "stripe-buy-button": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+    }
+  }
+}
+
 const FeatureCard: React.FC<{
   title: string;
   description: string;
