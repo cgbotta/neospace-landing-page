@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { LineChart, Users, Database } from "lucide-react";
+import Script from "next/script";
 
 const FeatureCard: React.FC<{
   title: string;
@@ -44,87 +45,109 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-      {/* Hero Section with Video */}
-      <section className="pt-20 pb-32 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-              Welcome to <span className="text-blue-600">Neo-Space</span>
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Discover a new dimension of possibilities with our innovative
-              AI-powered operational analytics platform
+    <>
+      <Script async src="https://js.stripe.com/v3/buy-button.js" />
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        {/* Hero Section with Video */}
+        <section className="pt-20 pb-32 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h1 className="text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
+                Welcome to <span className="text-blue-600">Neo-Space</span>
+              </h1>
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                Discover a new dimension of possibilities with our innovative
+                AI-powered operational analytics platform
+              </p>
+              <Link
+                href="https://neospacecanvas.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
+                  Get Started
+                </button>
+              </Link>
+            </div>
+            <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src="video.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="py-20 bg-white dark:bg-gray-800">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
+              Key Features
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
+              Explore how Neo-Space can revolutionize your business operations
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <FeatureCard
+                  key={index}
+                  title={feature.title}
+                  description={feature.description}
+                  icon={feature.icon}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Consultation Section */}
+        <section className="py-20 bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Schedule a Consultation
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
+              Book a personalized call with our experts to discuss your specific
+              use case and requirements
+            </p>
+            <div className="inline-block">
+              <stripe-buy-button
+                buy-button-id="buy_btn_1QFlXsP40l6WDMgOByngXmFM"
+                publishable-key="pk_live_51QFizvP40l6WDMgOpVupOCzVltjxFGbN0VbEQG0bOHUOce9QyITOFN1yhkqLSRQQ3QLmc0tx2GYE9M19JGa5TuJ000CTqkm5nB"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action Section */}
+        <section className="py-20 bg-blue-600 dark:bg-blue-800">
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Ready to Transform Your Operations?
+            </h2>
+            <p className="text-xl text-blue-100 mb-8">
+              Join innovative businesses leveraging Neo-Space to optimize their
+              processes and drive growth
             </p>
             <Link
               href="https://neospacecanvas.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
                 Get Started
               </button>
             </Link>
           </div>
-          <div className="relative aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="video.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-            Key Features
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-            Explore how Neo-Space can revolutionize your business operations
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <FeatureCard
-                key={index}
-                title={feature.title}
-                description={feature.description}
-                icon={feature.icon}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="py-20 bg-blue-600 dark:bg-blue-800">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Ready to Transform Your Operations?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join innovative businesses leveraging Neo-Space to optimize their
-            processes and drive growth
-          </p>
-          <Link
-            href="https://neospacecanvas.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300">
-              Get Started
-            </button>
-          </Link>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 
