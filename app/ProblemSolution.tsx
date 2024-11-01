@@ -22,7 +22,7 @@ const ProblemSolution = () => {
     {
       icon: <GitCompare className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
       problem:
-        "Two people make similar reports but there is a difference in how the data turns out. I'm unsure if it's in how they asked for the original data or in how they transformed it.",
+        "Two people make similar reports but there is a difference in how the data turns out. I am unsure if it is in how they asked for the original data or in how they transformed it.",
       solution:
         'Generate visual graphs and natural language summaries of data relationships with one click. Just highlight, right click, and "show report similarity".',
       title: "One-Click Comparisons",
@@ -44,7 +44,7 @@ const ProblemSolution = () => {
           Built for Real Problems
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-          We understand your data challenges because we've lived them
+          We understand your data challenges because we&apos;ve lived them
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {items.map((item, index) => (
