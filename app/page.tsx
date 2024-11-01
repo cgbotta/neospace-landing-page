@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 import { LineChart, Users, Database } from "lucide-react";
 import Script from "next/script";
+import RotatingSlogan from "./slogan";
+import ProblemSolution from "./ProblemSolution";
 
 // Declare custom JSX element for stripe-buy-button
 declare global {
@@ -65,12 +67,13 @@ const Home: React.FC = () => {
         <section className="pt-20 pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-                Welcome to <span className="text-blue-600">Neo-Space</span>
-              </h1>
+              {/* <h1 className="text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
+                Welcome to <span className="text-blue-600">neospace</span>
+              </h1> */}
+              <RotatingSlogan />
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                Discover a new dimension of possibilities with our innovative
-                AI-powered operational analytics platform
+                Your business runs on data, and nepospace AI will revolutionize
+                how you manage it
               </p>
               <Link
                 href="https://neospacecanvas.com"
@@ -98,26 +101,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* Features Section */}
-        <section className="py-20 bg-white dark:bg-gray-800">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-              Key Features
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-              Explore how Neo-Space can revolutionize your business operations
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
-                <FeatureCard
-                  key={index}
-                  title={feature.title}
-                  description={feature.description}
-                  icon={feature.icon}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProblemSolution />
 
         {/* Consultation Section */}
         <section className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -145,7 +129,7 @@ const Home: React.FC = () => {
               Ready to Transform Your Operations?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Join innovative businesses leveraging Neo-Space to optimize their
+              Join innovative businesses leveraging neospace to optimize their
               processes and drive growth
             </p>
             <Link
