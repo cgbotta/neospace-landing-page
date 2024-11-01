@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { LineChart, Users, Database } from "lucide-react";
 import Script from "next/script";
 import RotatingSlogan from "./slogan";
 import ProblemSolution from "./ProblemSolution";
