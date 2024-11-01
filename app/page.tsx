@@ -19,46 +19,7 @@ declare global {
   }
 }
 
-// const FeatureCard: React.FC<{
-//   title: string;
-//   description: string;
-//   icon: React.ReactNode;
-// }> = ({ title, description, icon }) => (
-//   <div className="bg-white dark:bg-gray-700 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-//     <div className="flex items-center mb-4">
-//       <div className="bg-blue-100 dark:bg-blue-800 p-3 rounded-full mr-4">
-//         {icon}
-//       </div>
-//       <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-//         {title}
-//       </h3>
-//     </div>
-//     <p className="text-gray-600 dark:text-gray-300">{description}</p>
-//   </div>
-// );
-
 const Home: React.FC = () => {
-  const features = [
-    {
-      title: "Advanced Analytics",
-      description:
-        "Leverage AI-powered insights to make data-driven decisions and optimize your operations.",
-      icon: <LineChart className="w-8 h-8 text-blue-600" />,
-    },
-    {
-      title: "Seamless Integration",
-      description:
-        "Effortlessly connect with your existing systems for a unified operational view.",
-      icon: <Database className="w-8 h-8 text-blue-600" />,
-    },
-    {
-      title: "Collaborative Platform",
-      description:
-        "Foster teamwork and knowledge sharing across departments with our intuitive tools.",
-      icon: <Users className="w-8 h-8 text-blue-600" />,
-    },
-  ];
-
   return (
     <>
       <Script async src="https://js.stripe.com/v3/buy-button.js" />
