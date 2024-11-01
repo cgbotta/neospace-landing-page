@@ -99,7 +99,7 @@ const TheTeam: React.FC = () => {
               Meet <span className="text-blue-600">The Team</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              The innovative minds behind Neo-Space&apos;s AI-powered solutions
+              The innovative minds behind neospace&apos;s AI-powered solutions
             </p>
           </div>
         </div>

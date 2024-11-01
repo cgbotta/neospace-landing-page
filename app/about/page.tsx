@@ -161,7 +161,7 @@ const About: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-6xl font-extrabold text-gray-900 dark:text-white mb-4">
-              About <span className="text-blue-600">Neo-Space</span>
+              About <span className="text-blue-600">neospace</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
               Revolutionizing operations reporting and analysis for businesses
@@ -184,7 +184,7 @@ const About: React.FC = () => {
           </div>
           <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
             <p className="text-xl text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              At Neo-Space, we&apos;re committed to bringing{" "}
+              At neospace, we&apos;re committed to bringing{" "}
               <span className="font-semibold text-blue-600 dark:text-blue-400">
                 clarity
               </span>
@@ -213,7 +213,7 @@ const About: React.FC = () => {
             Our Solution
           </h2>
           {/* <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-            Neo-Space provides cutting-edge solutions to transform your business
+            neospace provides cutting-edge solutions to transform your business
             operations
           </p> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -240,7 +240,7 @@ const About: React.FC = () => {
               Our Impact
             </h2>
             {/* <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Discover how Neo-Space transforms businesses through innovative
+              Discover how neospace transforms businesses through innovative
               solutions
             </p> */}
           </div>
@@ -265,7 +265,7 @@ const About: React.FC = () => {
             Ready to Transform Your Operations?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join the businesses already benefiting from Neo-Space&apos;s
+            Join the businesses already benefiting from neospace&apos;s
             innovative solutions
           </p>
           <Link

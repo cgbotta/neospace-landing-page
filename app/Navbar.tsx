@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link href="/">
               <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                Neo-Space
+                neospace
               </span>
             </Link>
           </div>
